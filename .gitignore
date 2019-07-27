@@ -1,0 +1,8 @@
+.DS_Store
+._*
+Thumbs.db
+!.gitignore
+/node_modules
+package-lock.json
+/.idea
+npm-debug.log
