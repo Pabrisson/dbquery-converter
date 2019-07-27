@@ -2,6 +2,8 @@
 
 Prestashop Tools for convert SQL on object dBQuery
 
+![alt text](https://github.com/Pabrisson/dbquery-converter/blob/master/hero_readme.png "dbQueryConverter")
+
 ### Download binairies
 
 **Linux:**
