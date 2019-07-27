@@ -1,0 +1,55 @@
+{
+  "name": "dbQueryConverter",
+  "version": "1.0.0",
+  "author": {
+    "name": "BRISSON Pierre-Alain",
+    "email": "brissonpierrealain@hotmail.com"
+  },
+  "homepage": "https://bitbucket.org/PAB78430/dbquery-converter/src/master/",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "./node_modules/.bin/electron-builder build --dir",
+    "dist": "./node_modules/.bin/electron-builder build"
+  },
+  "build": {
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "icon": "build/icon.icns",
+      "target": [
+        "dmg",
+        "pkg"
+      ]
+    },
+    "linux": {
+      "icon": "build/icon.png",
+      "target": [
+        "AppImage",
+        "deb",
+        "7z",
+        "tar.gz",
+        "tar.bz2"
+      ]
+    },
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        "msi",
+        "portable"
+      ]
+    },
+    "directories": {
+      "buildResources": "build"
+    }
+  },
+  "devDependencies": {
+    "electron": "3.0.10",
+    "electron-builder": "^21.1.5",
+    "electron-packager": "^14.0.3"
+  },
+  "dependencies": {
+    "codemirror": "5.47.0",
+    "jquery": "^3.4.1",
+    "split.js": "1.5.11"
+  }
+}

@@ -1,0 +1,23 @@
+directories:
+  output: dist
+  buildResources: build
+mac:
+  category: public.app-category.developer-tools
+  icon: build/icon.icns
+  target:
+    - dmg
+    - pkg
+linux:
+  icon: build/icon.png
+  target:
+    - AppImage
+    - deb
+    - 7z
+    - tar.gz
+    - tar.bz2
+win:
+  icon: build/icon.ico
+  target:
+    - msi
+    - portable
+electronVersion: 3.0.10

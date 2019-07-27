@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>dbQueryConverter</title>
+        <script src="node_modules/codemirror/lib/codemirror.js"></script>
+        <script src="mode/sql.js"></script>
+        <script src="mode/php.js"></script>
+        <script src="node_modules/codemirror/mode/xml/xml.js"></script>
+        <script src="node_modules/codemirror/mode/clike/clike.js"></script>
+        <script src="node_modules/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="node_modules/codemirror/lib/codemirror.css">
+        <link rel="stylesheet" type="text/css" href="node_modules/codemirror/theme/oceanic-next.css" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    </head>
+  <body>
+        <div class="wrapper">
+            <div class="code-input" id="js-code-input">
+                <textarea
+                    id="js-code-input-textarea"
+                    name="code-input-textarea"
+                    class="code-input-textarea"
+                >SELECT *, id_order
+FROM ps_orders AS o
+
+JOIN ps_orders_details AS od
+ON od.id_order = o.id_order
+AND od.id_order_details = 148
+
+WHERE TRUE
+AND id_order = 18
+AND bank = "wire"
+
+GROUP BY id_order, id_cart
+HAVING SUM(price_with_tax_incl) > 40
+ORDER BY id_order ASC
+
+LIMIT 100, 50</textarea>
+                <button
+                    class="code-input-button js-code-input-button"
+                    type="submit"
+                >
+                    Convert SQL
+                </button>
+            </div>
+            <div class="code-output" id="js-code-output">
+                <textarea
+                    id="js-code-output-textarea"
+                    name="code-output-code"
+                    disabled="disabled"
+                    class="code-output-code"
+                ></textarea>
+            </div>
+        </div>
+    <script>
+        require('./renderer.js')
+    </script>
+  </body>
+</html>
