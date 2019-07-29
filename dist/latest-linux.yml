@@ -1,0 +1,9 @@
+version: 1.0.0
+files:
+  - url: dbQueryConverter-1.0.0.AppImage
+    sha512: hYR15gM20ZHwXKQbIEAwi3bJ4SaGaxiHoWKcyPwxwP+18hNPJaOC4HtKFzBSLbH5PVZs1Afrc8x2P5wlh2U0Og==
+    size: 53707296
+    blockMapSize: 57908
+path: dbQueryConverter-1.0.0.AppImage
+sha512: hYR15gM20ZHwXKQbIEAwi3bJ4SaGaxiHoWKcyPwxwP+18hNPJaOC4HtKFzBSLbH5PVZs1Afrc8x2P5wlh2U0Og==
+releaseDate: '2019-07-29T17:46:31.387Z'

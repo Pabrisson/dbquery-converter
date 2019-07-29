@@ -1,0 +1,4 @@
+owner: Pabrisson
+repo: dbquery-converter
+provider: github
+updaterCacheDirName: dbqueryconverter-updater
